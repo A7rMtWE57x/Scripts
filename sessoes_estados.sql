@@ -6,4 +6,4 @@ select last_call_et, status, event, sid||','||serial# sid_serial, username, osus
              ,'EMON idle wait','PING','GCR sleep','VKRM Idle') 
              and not (event = 'SQL*Net message from client' and status = 'INACTIVE')
              and type = 'USER'
-  order by last_call_et desc;
+ order by last_call_et desc;
